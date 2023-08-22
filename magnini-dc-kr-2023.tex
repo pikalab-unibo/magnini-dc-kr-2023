@@ -1,0 +1,238 @@
+% !TeX spellcheck = en_GB
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass[handout]{beamer}\mode<handout>{\usetheme{default}}
+%
+\documentclass[presentation]{beamer}\mode<presentation>{\usetheme{blackAMSBolognaFC}}
+%\documentclass[handout]{beamer}\mode<handout>{\usetheme{AMSBolognaFC}}
+% \setbeamertemplate{bibliography item}{\insertbiblabel}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+%
+\usepackage{magnini-dc-kr-2023}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[Symbolic Transfer Learning]{
+    % same title of the presented paper
+    Symbolic Transfer Learning through
+    \\
+    Knowledge Manipulation Methods
+}
+%
+% \subtitle{Extended Abstract}
+%
+% same authors order of the presented paper
+\author[Magnini]{
+	\emph{Matteo Magnini}$^{*}$ % empth the presenting author
+}
+%
+\institute[UniBo]{
+    $^{*}$Dipartimento di Informatica -- Scienza e Ingegneria (DISI)
+    \\
+    \textsc{Alma Mater Studiorum} -- Università di Bologna
+    \\
+    \texttt{
+        \emph{matteo.magnini}@unibo.it % emph the presenting author's email
+    }
+}
+%
+\date[DC KR 2023]{
+	Doctoral Consortium at the
+    \\
+    20\textsuperscript{th} International Conference on
+	\\
+	Principles of Knowledge Representation and Reasoning (KR)
+	\\
+	September 5\textsuperscript{th}, 2023, Rhodes, Greece
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\AtBeginSection[]
+{
+%\\\\\\\\\\\\\\\\\\\\\
+\begin{frame}<beamer>[c,noframenumbering]
+\frametitle{Next in Line\ldots}
+\tableofcontents[sectionstyle=show/shaded,subsectionstyle=hide]
+\end{frame}
+%\\\\\\\\\\\\\\\\\\\\\
+}
+\AtBeginSubsection[]
+{
+%\\\\\\\\\\\\\\\\\\\\\
+\begin{frame}<beamer>[shrink,noframenumbering]
+    \frametitle{Focus on\ldots}
+	\mbox{~}
+	\tableofcontents[currentsubsection,sectionstyle=shaded,subsectionstyle=show/shaded]
+	\mbox{~}
+\end{frame}
+%\\\\\\\\\\\\\\\\\\\\\
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\\\\\\\\\\\\\\\\\\\\\
+\frame{\titlepage}
+%\\\\\\\\\\\\\\\\\\\\\
+
+%===============================================================================
+\section{Motivation \& Context}
+%===============================================================================
+
+%\\\\\\\\\\\\\\\\\\\\\
+\begin{frame}[c]{Context}
+    
+    Provide some context (max 4-5 items):
+    %
+    \vfill
+    %
+    \begin{itemize}
+        \item fact 1
+        %
+        \begin{itemize}
+            \item note
+        \end{itemize}
+        
+        \vfill
+        
+        \item[$\Rightarrow$] fact 2 implied by fact 1
+        %
+        \begin{itemize}
+            \item[!] important \alert{notice}
+        \end{itemize}
+        
+        \vfill
+        
+        \item fact 3
+        %
+        \begin{itemize}
+            \item note
+        \end{itemize}
+        
+        \vfill
+        
+        \item fact 4
+        
+    \end{itemize}
+\end{frame}
+%\\\\\\\\\\\\\\\\\\\\\
+
+%\\\\\\\\\\\\\\\\\\\\\
+\begin{frame}[c,allowframebreaks]{Utopy and Reality}
+    \hspace{0.5cm}
+    \begin{figure*}
+        \includegraphics[width=0.4\textwidth,left]{figures/data-labels-knowledge-1}
+    \end{figure*}
+    \hfill
+
+    \framebreak
+
+    \hfill
+    \begin{figure*}
+        \includegraphics[width=0.4\textwidth,right]{figures/data-labels-knowledge-2}
+    \end{figure*}
+    \hspace{0.5cm}
+
+\end{frame}
+%\\\\\\\\\\\\\\\\\\\\\
+
+%\\\\\\\\\\\\\\\\\\\\\
+\begin{frame}{Some state of the art (optional)}
+
+    Provide relevant information about the state of the art / related works here, possibly with references
+
+\end{frame}
+%\\\\\\\\\\\\\\\\\\\\\
+
+%\\\\\\\\\\\\\\\\\\\\\
+\begin{frame}{Contribution of the paper}
+
+\begin{block}{Explicitly state the contributions of the paper}
+    \begin{itemize}
+        \item contribution 1
+        \item contribution 2
+    \end{itemize}
+\end{block}
+
+\end{frame}
+%\\\\\\\\\\\\\\\\\\\\\
+
+%===============================================================================
+\section{Desing of a Symbolic Transfer Learning Framework}
+%===============================================================================
+
+%\\\\\\\\\\\\\\\\\\\\\
+\begin{frame}%[allowframebreaks]
+\frametitle{Theory / modelling / design}
+
+    Provide 2-3 slides discussing the Theory / modelling / design
+
+\end{frame}
+%\\\\\\\\\\\\\\\\\\\\\
+
+%===============================================================================
+\section{Where we are now}
+%===============================================================================
+
+%\\\\\\\\\\\\\\\\\\\\\
+\begin{frame}%[allowframebreaks]
+\frametitle{Case study / Experiments / Results}
+
+    Provide 2-3 slides discussing the Case study / Experiments / Results of the paper
+
+\end{frame}
+%\\\\\\\\\\\\\\\\\\\\\
+
+\section{Where we are going}
+
+%\\\\\\\\\\\\\\\\\\\\\
+\begin{frame}%[allowframebreaks]
+\frametitle{Conclusions \& future works}
+
+\begin{block}{Summing up}
+    Summarise the most relevant contributions of this study:
+    %
+    \begin{itemize}
+        \item conclusion 1
+        \item conclusion 2
+        \item conclusion 3
+    \end{itemize}
+\end{block}
+
+\begin{exampleblock}{Future works}
+    Sketch some future research directions
+    %
+    \begin{itemize}
+        \item future work 1
+        \item future work 2
+    \end{itemize}
+\end{exampleblock}
+
+(may be split into 2 slides)
+
+\end{frame}
+%\\\\\\\\\\\\\\\\\\\\\
+
+%===============================================================================
+\section*{}
+%===============================================================================
+\frame{\titlepage}
+
+%===============================================================================
+\section*{\bibname}
+%===============================================================================
+
+\setbeamertemplate{page number in head/foot}{}
+%\\\\\\\\\\\\\\\\\\\\\
+\begin{frame}[t,allowframebreaks,noframenumbering]\frametitle{\refname}
+% \begin{frame}[c]\frametitle{\refname}
+	\footnotesize
+%	\scriptsize
+    \bibliographystyle{apalike-AMS}
+    % \bibliographystyle{plain}
+    \nocite{*}
+	\bibliography{magnini-dc-kr-2023}
+\end{frame}
+%\\\\\\\\\\\\\\\\\\\\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
