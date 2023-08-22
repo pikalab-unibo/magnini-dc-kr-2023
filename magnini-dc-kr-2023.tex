@@ -13,9 +13,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title[Symbolic Transfer Learning]{
     % same title of the presented paper
-    Symbolic Transfer Learning through
+    \textbf{Symbolic Transfer Learning through}
     \\
-    Knowledge Manipulation Methods
+    \textbf{Knowledge Manipulation Methods}
 }
 %
 % \subtitle{Extended Abstract}
@@ -42,7 +42,7 @@
 	\\
 	Principles of Knowledge Representation and Reasoning (KR)
 	\\
-	September 5\textsuperscript{th}, 2023, Rhodes, Greece
+	September 5\textsuperscript{th}, 2023, Rhodes (Greece)
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \AtBeginSection[]
@@ -79,38 +79,35 @@
 
 %\\\\\\\\\\\\\\\\\\\\\
 \begin{frame}[c]{Context}
-    
-    Provide some context (max 4-5 items):
-    %
-    \vfill
-    %
+
+    Players involved in a Machine Learning workflow:
+    \vspace{0.5cm}
     \begin{itemize}
-        \item fact 1
+        \item Data
         %
         \begin{itemize}
-            \item note
+            \item[!] require \alert{labels}
         \end{itemize}
-        
+
         \vfill
-        
-        \item[$\Rightarrow$] fact 2 implied by fact 1
+
+        \item Knowledge
         %
         \begin{itemize}
-            \item[!] important \alert{notice}
+            \item human experts
+            \item common sense
+            \item extracted from data/models
         \end{itemize}
-        
+
         \vfill
-        
-        \item fact 3
+
+        \item Model
         %
         \begin{itemize}
-            \item note
+            \item trained on data
+            \item sometimes also trained with prior knowledge
         \end{itemize}
-        
-        \vfill
-        
-        \item fact 4
-        
+
     \end{itemize}
 \end{frame}
 %\\\\\\\\\\\\\\\\\\\\\
@@ -128,32 +125,34 @@
     \includegraphics[width=0.4\textwidth]{figures/data-labels-knowledge-2}
     \hspace{0.5cm}
 
-\end{frame}
-%\\\\\\\\\\\\\\\\\\\\\
+    \framebreak
 
-%\\\\\\\\\\\\\\\\\\\\\
-\begin{frame}{Some state of the art (optional)}
-
-    Provide relevant information about the state of the art / related works here, possibly with references
+    \centering
+    But in some tasks we deal with both low data/labels and knowledge\dots
 
 \end{frame}
 %\\\\\\\\\\\\\\\\\\\\\
 
 %\\\\\\\\\\\\\\\\\\\\\
-\begin{frame}{Contribution of the paper}
+\begin{frame}[allowframebreaks]{Transfer Learning}
 
-\begin{block}{Explicitly state the contributions of the paper}
-    \begin{itemize}
-        \item contribution 1
-        \item contribution 2
-    \end{itemize}
-\end{block}
+    \centering
+    Reuse the knowledge acquired in a \alert{similar} task!
+
+    \framebreak
+
+    \begin{figure}
+        \includegraphics[width=0.7\textwidth]{figures/transfer-learning}
+    \end{figure}
+
+    \framebreak
+
 
 \end{frame}
 %\\\\\\\\\\\\\\\\\\\\\
 
 %===============================================================================
-\section{Desing of a Symbolic Transfer Learning Framework}
+\section{Symbolic Transfer Learning Framework}
 %===============================================================================
 
 %\\\\\\\\\\\\\\\\\\\\\
@@ -226,6 +225,7 @@
 %	\scriptsize
     \bibliographystyle{apalike-AMS}
     % \bibliographystyle{plain}
+    % \nocite{*}
 	\bibliography{magnini-dc-kr-2023}
 \end{frame}
 %\\\\\\\\\\\\\\\\\\\\\
