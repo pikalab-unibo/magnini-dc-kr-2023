@@ -121,6 +121,8 @@
 
     \framebreak
 
+    \hspace{0.5cm}
+    {\transparent{0.2}\includegraphics[width=0.4\textwidth]{figures/data-labels-knowledge-1}}
     \hfill
     \includegraphics[width=0.4\textwidth]{figures/data-labels-knowledge-2}
     \hspace{0.5cm}
@@ -147,6 +149,22 @@
 
     \framebreak
 
+    \centering
+    What kind of knowledge?
+    \\
+    \vspace{0.5cm}
+    \\
+    \phantom{Tipically model parameters (NN weights) $\rightarrow$ \alert{sub-symbolic} knowledge}
+
+    \framebreak
+
+    \centering
+    What kind of knowledge?
+    \\
+    \vspace{0.5cm}
+    \\
+    Typically model parameters (NN weights) $\rightarrow$ \alert{sub-symbolic} knowledge
+
 
 \end{frame}
 %\\\\\\\\\\\\\\\\\\\\\
@@ -157,9 +175,68 @@
 
 %\\\\\\\\\\\\\\\\\\\\\
 \begin{frame}%[allowframebreaks]
-\frametitle{Theory / modelling / design}
+\frametitle{Limitations of Sub-symbolic TL}
 
-    Provide 2-3 slides discussing the Theory / modelling / design
+    \begin{itemize}
+        \item Opaqueness
+        %
+        \begin{itemize}
+            \item[!] sub-symbolic knowledge is \alert{not} (directly) \alert{interpretable} by humans
+        \end{itemize}
+
+        \vfill
+
+        \item Why it (does not) works?
+        %
+        \begin{itemize}
+            \item we have no guarantees on what happens under the hood
+            \item fails when tasks are different
+            \item fails when there are biases in the data
+        \end{itemize}
+
+    \end{itemize}
+
+\end{frame}
+%\\\\\\\\\\\\\\\\\\\\\
+
+%\\\\\\\\\\\\\\\\\\\\\
+\begin{frame}[allowframebreaks]
+\frametitle{Symbolic TL}
+
+    A not exhaustive list of benefits of \alert{symbolic} knowledge:
+    \vspace{0.5cm}
+    \begin{itemize}
+        \item Interpretability
+        %
+        \begin{itemize}
+            \item[!] symbolic knowledge is understandable by both humans and machines
+        \end{itemize}
+
+        \vfill
+
+        \item Concision
+        %
+        \begin{itemize}
+            \item intensional representation
+            \item natural support to recursion
+        \end{itemize}
+
+        \vfill
+
+        \item Lingua Franca
+        %
+        \begin{itemize}
+            \item no bound to a specific class of models
+        \end{itemize}
+
+        \vfill
+
+    \end{itemize}
+
+    \framebreak
+
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/symbolic-transfer-learning}
 
 \end{frame}
 %\\\\\\\\\\\\\\\\\\\\\
@@ -170,9 +247,18 @@
 
 %\\\\\\\\\\\\\\\\\\\\\
 \begin{frame}%[allowframebreaks]
-\frametitle{Case study / Experiments / Results}
+\frametitle{Symbolic Knowledge Extraction}
 
-    Provide 2-3 slides discussing the Case study / Experiments / Results of the paper
+
+
+\end{frame}
+%\\\\\\\\\\\\\\\\\\\\\
+
+%\\\\\\\\\\\\\\\\\\\\\
+\begin{frame}%[allowframebreaks]
+\frametitle{Symbolic Knowledge Injection}
+
+
 
 \end{frame}
 %\\\\\\\\\\\\\\\\\\\\\
@@ -181,28 +267,9 @@
 
 %\\\\\\\\\\\\\\\\\\\\\
 \begin{frame}%[allowframebreaks]
-\frametitle{Conclusions \& future works}
+\frametitle{Open problems}
 
-\begin{block}{Summing up}
-    Summarise the most relevant contributions of this study:
-    %
-    \begin{itemize}
-        \item conclusion 1
-        \item conclusion 2
-        \item conclusion 3
-    \end{itemize}
-\end{block}
 
-\begin{exampleblock}{Future works}
-    Sketch some future research directions
-    %
-    \begin{itemize}
-        \item future work 1
-        \item future work 2
-    \end{itemize}
-\end{exampleblock}
-
-(may be split into 2 slides)
 
 \end{frame}
 %\\\\\\\\\\\\\\\\\\\\\
