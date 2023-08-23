@@ -139,7 +139,7 @@
 \begin{frame}[allowframebreaks]{Transfer Learning}
 
     \centering
-    Reuse the knowledge acquired in a \alert{similar} task!
+    Reuse the knowledge acquired in a \alert{similar} task!~\ccite{transfer-learning-survey-Tan-2018}
 
     \framebreak
 
@@ -151,9 +151,7 @@
 
     \centering
     What kind of knowledge?
-    \\
     \vspace{0.5cm}
-    \\
     \phantom{Tipically model parameters (NN weights) $\rightarrow$ \alert{sub-symbolic} knowledge}
 
     \framebreak
@@ -162,9 +160,7 @@
     What kind of knowledge?
     \\
     \vspace{0.5cm}
-    \\
     Typically model parameters (NN weights) $\rightarrow$ \alert{sub-symbolic} knowledge
-
 
 \end{frame}
 %\\\\\\\\\\\\\\\\\\\\\
@@ -178,10 +174,10 @@
 \frametitle{Limitations of Sub-symbolic TL}
 
     \begin{itemize}
-        \item Opaqueness
+        \item Opaqueness~\ccite{BrachmanL2004}
         %
         \begin{itemize}
-            \item[!] sub-symbolic knowledge is \alert{not} (directly) \alert{interpretable} by humans
+            \item[!] sub-symbolic knowledge/model is \alert{not interpretable} by humans
         \end{itemize}
 
         \vfill
@@ -203,7 +199,7 @@
 \begin{frame}[allowframebreaks]
 \frametitle{Symbolic TL}
 
-    A not exhaustive list of benefits of \alert{symbolic} knowledge:
+    A not exhaustive list of benefits of \alert{symbolic} knowledge~\ccite{extraction-survey-guidotti-2021}:
     \vspace{0.5cm}
     \begin{itemize}
         \item Interpretability
@@ -236,7 +232,9 @@
     \framebreak
 
     \centering
-    \includegraphics[width=0.6\textwidth]{figures/symbolic-transfer-learning}
+    \begin{figure}
+        \includegraphics[width=0.6\textwidth]{figures/symbolic-transfer-learning}
+    \end{figure}
 
 \end{frame}
 %\\\\\\\\\\\\\\\\\\\\\
@@ -249,6 +247,37 @@
 \begin{frame}%[allowframebreaks]
 \frametitle{Symbolic Knowledge Extraction}
 
+    \alert{Extract} symbolic knowledge from a sub-symbolic model:~\ccite{extraction-survey-guidotti-2021}
+    \vspace{0.5cm}
+    \begin{itemize}
+        \item Families
+        %
+        \begin{itemize}
+            \item pedagogical $\rightarrow$ \alert{model agnostic}
+            \item decompositional $\rightarrow$ \alert{model inspection}
+        \end{itemize}
+
+        \vfill
+
+        \item Logical Rules
+        %
+        \begin{itemize}
+            \item propositional logic
+            \item first-order logic
+            \item other logics
+        \end{itemize}
+
+        \vfill
+
+        \item Scope
+        %
+        \begin{itemize}
+            \item global explanations
+            \item local explanations
+        \end{itemize}
+
+        \vfill
+    \end{itemize}
 
 
 \end{frame}
@@ -258,7 +287,28 @@
 \begin{frame}%[allowframebreaks]
 \frametitle{Symbolic Knowledge Injection}
 
+    \alert{Inject} symbolic knowledge into a sub-symbolic model:~\ccite{neuro-symbolic-survey-Besold-2017}
+    \vspace{0.5cm}
+    \begin{itemize}
+        \item Families
+        %
+        \begin{itemize}
+            \item constraining $\rightarrow$ \alert{loss function}
+            \item structuring $\rightarrow$ \alert{model architecture}
+        \end{itemize}
 
+        \vfill
+
+        \item Logical Rules
+        %
+        \begin{itemize}
+            \item propositional logic
+            \item first-order logic
+            \item other logics
+        \end{itemize}
+
+        \vfill
+    \end{itemize}
 
 \end{frame}
 %\\\\\\\\\\\\\\\\\\\\\
@@ -269,6 +319,41 @@
 \begin{frame}%[allowframebreaks]
 \frametitle{Open problems}
 
+    \begin{itemize}
+        \item What is in between?
+        %
+        \begin{itemize}
+            \item it is rare to be able to use the extracted knowledge as is
+            \item different tasks may require different representations
+        \end{itemize}
+
+        \vfill
+
+        \item Full recursive concept support?
+        %
+        \begin{itemize}
+            \item formal logic can represent recursive predicates
+            \item sub-symbolic models like NN (based on \alert{backpropagation}) are direct acyclic graphs
+        \end{itemize}
+
+        \vfill
+
+        \item Evaluation
+        %
+        \begin{itemize}
+            \item accuracy is not the only dimension
+            \item need for other metrics (e.g., interpretability, robustness)~\ccite{skiqos-jaamas-2023}
+        \end{itemize}
+
+        \vfill
+
+        \item Technological support
+        %
+        \begin{itemize}
+            \item \alert{public} and \alert{maintained} tools for symbolic knowledge extraction and injection~\ccite{psyke,psyki}
+        \end{itemize}
+
+    \end{itemize}
 
 
 \end{frame}
