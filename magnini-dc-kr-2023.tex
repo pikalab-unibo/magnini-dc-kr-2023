@@ -224,6 +224,14 @@
     \vspace{0.5cm}
     Typically model parameters (NN weights) $\rightarrow$ \alert{sub-symbolic} knowledge
 
+    \framebreak
+
+    \centering
+    \begin{figure}
+        \includegraphics[width=0.7\linewidth]{figures/deep-transfer-learning-example}
+        \caption{source: \ncite{deep-transfer-learning-example-2019}}
+    \end{figure}
+
 \end{frame}
 %\\\\\\\\\\\\\\\\\\\\\
 
@@ -357,6 +365,7 @@
         \begin{itemize}
             \item constraining $\rightarrow$ \alert{loss function}
             \item structuring $\rightarrow$ \alert{model architecture}
+            \item alternatively keep model(s) and knowledge separate
         \end{itemize}
 
         \vfill
@@ -379,9 +388,9 @@
 
 %\\\\\\\\\\\\\\\\\\\\\
 \begin{frame}%[allowframebreaks]
-\frametitle{Open problems}
+\frametitle{Open Problems}
 
-    \begin{itemize}
+    \begin{enumerate}
         \item What is in between?
         %
         \begin{itemize}
@@ -415,7 +424,35 @@
             \item \alert{public} and \alert{maintained} tools for symbolic knowledge extraction and injection~\ccite{psyke,psyki}
         \end{itemize}
 
-    \end{itemize}
+    \end{enumerate}
+
+\end{frame}
+%\\\\\\\\\\\\\\\\\\\\\
+
+%\\\\\\\\\\\\\\\\\\\\\
+\begin{frame}
+\frametitle{Working Plan}
+
+    \begin{enumerate}
+        \item  Design knowledge manipulation methods:
+        %
+        \begin{itemize}
+            \item similar tasks\\ $\rightarrow$ partially affects variables and constants
+            %
+            \item dissimilar tasks\\ $\rightarrow$ affects all the knowledge\\  $\rightarrow$ inductive logic programming~\ccite{inductive-logic-programming-91}
+        \end{itemize}
+        %
+        \vfill
+        %
+        \item Design injection methods to fully support recursion:
+        %
+        \begin{itemize}
+            \item novel symbolic knowledge injection\\ $\rightarrow$ the knowledge is actually injected into the model
+            %
+            \item but also neuro-symbolic approaches\\ $\rightarrow$ model(s) and knowledge are two distinct entities of the system
+        \end{itemize}
+
+    \end{enumerate}
 
 \end{frame}
 %\\\\\\\\\\\\\\\\\\\\\
