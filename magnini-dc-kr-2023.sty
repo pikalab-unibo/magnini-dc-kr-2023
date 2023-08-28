@@ -1,3 +1,4 @@
+\usepackage{caption}
 \usepackage{wasysym}
 \usepackage[yyyymmdd]{datetime}
 \renewcommand{\dateseparator}{}
@@ -69,6 +70,20 @@
 {}}}
 % New commands
 
-\newcommand{\hint}[1]{{\tiny\textcolor{gray}{#1}}}
 
+\newcommand{\hint}[1]{{\tiny\textcolor{gray}{#1}}}
 \usepackage{transparent}
+
+\setbeamerfont{caption}{size=\tiny}
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\captionsetup[figure]{labelformat=empty}
+
+\newcommand{\collaborator}[3]{
+    \begin{minipage}[b]{#3\linewidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/people/#1#2}
+        \vspace*{-0.7cm}
+        \centering
+        \caption{#1 #2}
+    \end{minipage}
+}
