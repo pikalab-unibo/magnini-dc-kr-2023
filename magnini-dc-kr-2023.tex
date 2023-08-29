@@ -314,7 +314,7 @@
 %===============================================================================
 
 %\\\\\\\\\\\\\\\\\\\\\
-\begin{frame}%[allowframebreaks]
+\begin{frame}[allowframebreaks]
 \frametitle{Symbolic Knowledge Extraction}
 
     \alert{Extract} symbolic knowledge from a sub-symbolic model:~\ccite{extraction-survey-guidotti-2019}
@@ -349,12 +349,46 @@
         \vfill
     \end{itemize}
 
+    \framebreak
+    \centering
+    \begin{columns}
+        \begin{column}{.4\linewidth}
+            \includegraphics[width=\linewidth]{figures/extraction-iris}
+        \end{column}
+        \alert{$\rightarrow$}
+        \begin{column}{.55\linewidth}\scriptsize
+            \[ 
+            \begin{array}{l}
+                \variable{Class} = \functor{setosa} \leftarrow \variable{PetalWidth} \leq 1.0 \fullstop
+                \\
+                \\
+                \variable{Class} = \functor{versicolor} \leftarrow \\
+                \qquad \variable{PetalLength} > 4.9 \wedge\ \variable{SepalWidth} \in [2.9,\ 3.2] \fullstop
+                \\
+                \\
+                \variable{Class} = \functor{versicolor} \leftarrow  \variable{PetalWidth} > 1.6 \fullstop
+                \\
+                \\
+                \variable{Class} = \functor{virginica} \leftarrow \variable{SepalWidth} \leq 2.9 \fullstop
+                \\
+                \\
+                \variable{Class} = \functor{virginica} \leftarrow \variable{SepalLength} \in [5.4,\ 6.3] \fullstop
+                \\
+                \\
+                \variable{Class} = \functor{virginica} \leftarrow \variable{PetalWidth} \in [1.0,\ 1.6] \fullstop
+                \\
+                \\
+            \end{array}    
+            \]
+        \end{column}
+        \hfill
+    \end{columns}
 
 \end{frame}
 %\\\\\\\\\\\\\\\\\\\\\
 
 %\\\\\\\\\\\\\\\\\\\\\
-\begin{frame}%[allowframebreaks]
+\begin{frame}[allowframebreaks]
 \frametitle{Symbolic Knowledge Injection}
 
     \alert{Inject} symbolic knowledge into a sub-symbolic model:~\ccite{injection-survey-Rueden-2021}
@@ -380,6 +414,14 @@
 
         \vfill
     \end{itemize}
+
+    \framebreak
+    \centering
+    \includegraphics[width=0.55\textwidth]{figures/injection-constraining}
+    \vfill
+    \includegraphics[width=0.55\textwidth]{figures/injection-structuring}
+    \vfill
+        
 
 \end{frame}
 %\\\\\\\\\\\\\\\\\\\\\
